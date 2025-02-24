@@ -1,0 +1,68 @@
+https://www.youtube.com/watch?v=lV-wGuAN0VY
+https://stationeryworldonline.co.uk/paint/
+https://www.youtube.com/watch?v=OQZNAMjC6Vg
+https://www.w3schools.com/howto/howto_css_arrows.asp
+https://freerangestock.com/photos/131097/pens-and-pencils-.html
+https://www.jacksonsart.com/blog/2018/09/13/choosing-the-right-canvas-for-your-painting/
+https://www.istockphoto.com/photos/sculpting-clay
+https://www.dreamstime.com/photos-images/office-supplies.html
+https://www.youtube.com/watch?v=9nh0snfJ7Ao
+https://www.youtube.com/watch?v=nRHCoOVSu5k
+https://www.youtube.com/watch?v=rsd4FNGTRBw
+https://www.youtube.com/watch?v=vJ4ndwKlmCE
+https://www.youtube.com/watch?v=3Kterjsc74s
+https://www.youtube.com/watch?v=T1rLPD0zDB4
+https://www.w3schools.com/howto/howto_css_split_screen.asp
+https://www.youtube.com/watch?v=uS032avlZ6I
+https://stackoverflow.com/questions/41051094/making-a-plus-sign-with-css
+
+video:
+https://www.youtube.com/watch?v=6Aj_keAAY-Y
+https://www.youtube.com/watch?v=Qqgmt4Eq3s8
+https://www.youtube.com/watch?v=08dL2O8lTqs&t=238s
+https://www.youtube.com/watch?v=bvfG_LOHkUM
+
+videos used for products
+https://www.youtube.com/watch?v=Xjhtvwn-uO8
+https://www.youtube.com/watch?v=Q2Ef3VlkwTc
+https://www.youtube.com/watch?v=PmNDsdMoVvQ
+https://www.youtube.com/watch?v=Or36tLEo694
+https://www.youtube.com/watch?v=BjE6qA2wtBo
+https://www.youtube.com/watch?v=LtgIqE23PtY
+https://www.youtube.com/watch?v=GvzpafmJDcc
+https://www.youtube.com/watch?v=S-vxKpo6wEs
+https://www.youtube.com/watch?v=7yHbap6f6Uk
+
+
+.collection-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.collection {
+  position: relative;
+}
+
+.collection img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.collection p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.collection:nth-child(3) {
+  margin-bottom: 10px;
+  grid-column: span 2;
+}

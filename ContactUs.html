@@ -1,0 +1,135 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="Scripts/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1" />
+    <script src="https://kit.fontawesome.com/7d7f092cee.js" crossorigin="anonymous"></script>
+
+    <title>Art Cavort: Your Sketches Realised</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Mulish:wght@300&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+<body>
+  <header>
+    <div class="navbar"> <!--Navigation bar at the top of every page-->
+      <a href="index.html"><img src="Images/logo.png" width="200" class="logo"></a>
+      <nav>
+        <ul class="navbar-contents"> <!--List to create the items in the navigation bar-->
+          <li class="navbar-item"> <!--The navbar item class is given to each link in the navigation bar, the a tag is used to make each of them links-->
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="navbar-item">
+            <a href="Products.html" class="nav-link">Products</a>
+          </li>
+          <li class="navbar-item">
+            <a href="SignUp.html" class="nav-link-uni">Sign Up</a>
+          </li>
+          <li class="navbar-item">
+            <a href="AboutUs.html" class="nav-link">About Us</a>
+          </li>
+          <li class="navbar-item">
+            <a href="ContactIUs.html" class="nav-link">Contact Us</a>
+          </li>
+        </ul>
+        <div class="hamburger"> <!--These div here is used to make the hamburger menu-->
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <!--The reason for the three spans above is so I can use CSS to style three horizontal lines that resemble a menu icon instead of using an image-->
+        </div>
+      </nav>
+    </div>
+  </header>
+
+    <main>
+      <div class="formandmap">
+        <div class="contact-form-wrapper">
+          <form>
+            <div class="contact-text">
+              <p>Send Us a Message!</p>
+            </div>
+            <div class="form-item">
+              <input type="text" name="sender" required />
+              <label class="contact-us-label">Name:</label>
+            </div>
+            <div class="form-item">
+              <input type="text" name="email" required />
+              <label class="contact-us-label">Email:</label>
+            </div>
+            <div class="form-item">
+              <textarea class="" name="message" required></textarea>
+              <label class="contact-us-label">Message:</label>
+            </div>
+            <button class="submit-btn">Send</button>
+            <div class="contact-text2">
+              <p>Phone Number: 0141 496 0149</p>
+            </div>
+            <div class="contact-text2">
+              <p>Address: 73 Church Street, DUNDEE, DD29 2VW</p>
+            </div>
+          </form>
+        </div>
+        <div class="mappy">
+          <p>Or Find Us Here!</p>
+          <div class="google-maps">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3280.169016582864!2d135.8212778!3d34.7009167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8d10b2da4b3b224a!2zMzTCsDQyJzAzLjMiTiAxMzXCsDQ5JzE2LjYiRQ!5e0!3m2!1sen!2suk!4v1655655368778!5m2!1sen!2suk"
+              width="600"
+              height="400"
+              style="border: 0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+    <section class="footer">
+      
+    <div class="buttons-container">
+        <h2>Change your font size: </h2>
+        <button id="increase-font-size">A+</button>
+        <button id="decrease-font-size">A-</button>
+        <button onclick="resetFontSize()">Reset Font Size</button>
+        <h2>WARNING: Changing the font size may break the websites layout, please reset the font size if this happens.</h2>
+      </div>
+
+      <div class="buttons-container">
+        <h2>Choose your colours: </h2>
+        <button id='red' class='redbutton'>Pastel Red</button>
+        <button id='blue' class='bluebutton'>Faint Blue</button>
+        <button id='green' class='greenbutton'>Summer Green</button>
+        <button id='yellow' class='yellowbutton'>Autumn Yellow</button>
+        <button id='white' class='whitebutton'>White</button>
+      </div>
+
+      <section class="footer">
+        <div class="footerlogo"><img src="Images/logo.png" /></div>
+        <div class="social">
+            <a href="https://www.instagram.com/rick.harith/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a href="https://www.youtube.com/channel/UCSQTPFsNZrG0aJGhOF7fdLw"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+            <a href="https://www.facebook.com/rick.harith/"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+        </div>
+        <div class="footernav">
+          <ul class="list">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="AboutUs.html">About Us</a></li>
+              <li><a href="ContactUs.html">Contact Us</a></li>
+          </ul>
+        </div>
+          <p>Name: Rick Richard Harith</p>
+          <p>Email: T0321003@my.ntu.ac.uk || Phone Number: 07864676131</p>
+          <p>Copyright Information: All images used are not copyright free.</p>
+      </section>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

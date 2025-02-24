@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="Scripts/style.css"> <!--Links to CSS-->
+		<meta charset="UTF-8"> <!--Character set that lets html to display properly-->
+		<meta name="viewport" content="width=device-width, intial-scale=1"> <!--This makes different browsers control the page's scalling and dimensions properly-->
+		<script src="https://kit.fontawesome.com/7d7f092cee.js" crossorigin="anonymous"></script> <!--This script is used for the social media icons-->
+
+		<title>Art Cavort's Stationary: Your Dreams Realised</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"> 
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Mulish:wght@300&family=Permanent+Marker&display=swap" rel="stylesheet">
+		<!--Above is the code for importing certain Google fonts-->
+		<script>
+			window.onload = function() {
+			let productGalleryImg = document.getElementById('product-gallery-img');
+			let productImgBtn = document.getElementsByClassName("product-img-btn");
+			let enlargeImgBtn = document.getElementsByClassName("enlarge-img-btn")[0];
+
+			enlargeImgBtn.addEventListener("click", function() {
+			  productGalleryImg.classList.toggle("enlarged");
+			});
+
+			productImgBtn[0].onclick = function(){
+			productGalleryImg.src = "Images/StationeryItem2.webp";
+			for(bt of productImgBtn){
+				bt.classList.remove("active");
+			}
+			this.classList.add("active");
+			}
+			productImgBtn[1].onclick = function(){
+			productGalleryImg.src = "Images/StationeryItem2-1.webp";
+			for(bt of productImgBtn){
+			bt.classList.remove("active");
+			}
+			this.classList.add("active");
+			}
+			};
+		</script>
+	</head>
+
+	<body>
+	<header>
+		<div class="navbar"> <!--Navigation bar at the top of every page-->
+			<a href="index.html"><img src="Images/logo.png" width="200" class="logo"></a>
+			<nav>
+				<ul class="navbar-contents"> <!--List to create the items in the navigation bar-->
+					<li class="navbar-item"> <!--The navbar item class is given to each link in the navigation bar, the a tag is used to make each of them links-->
+						<a href="index.html" class="nav-link">Home</a>
+					</li>
+					<li class="navbar-item">
+						<a href="Products.html" class="nav-link">Products</a>
+					</li>
+					<li class="navbar-item">
+						<a href="SignUp.html" class="nav-link-uni">Sign Up</a>
+					</li>
+					<li class="navbar-item">
+						<a href="AboutUs.html" class="nav-link">About Us</a>
+					</li>
+					<li class="navbar-item">
+						<a href="ContactIUs.html" class="nav-link">Contact Us</a>
+					</li>
+				</ul>
+				<div class="hamburger"> <!--These div here is used to make the hamburger menu-->
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<span class="bar"></span>
+					<!--The reason for the three spans above is so I can use CSS to style three horizontal lines that resemble a menu icon instead of using an image-->
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+
+		<div class="product-page-container">
+			<div class="product-page">
+				<div class="product-gallery">
+					<img src="Images/StationeryItem2.webp" id="product-gallery-img">
+					<div class="controls">
+						<span class="product-img-btn active"></span>
+						<span class="product-img-btn"></span>
+						<span class="enlarge-img-btn">+</span>
+					</div>
+				</div>
+				<div class="product-page-details">
+					<h1>LAMY Pico Ballpoint</h1>
+					<h2>$35.99</h2>
+					<p>Small and handy, the LAMY pico first shows its full potential when expanded. An innovative pocket pen which transforms to a full-grown ballpoint pen thanks to its sophisticated push mechanism</p>
+					<br>
+					<a href="#" class="purchase-button">Purchase</a>
+					<br>
+					<h1>Video: </h1>
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/GvzpafmJDcc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<br><br>
+	</main>
+
+	<footer>
+		<section class="footer">
+
+			<div class="buttons-container">
+				<h2>Change your font size: </h2>
+				<button id="increase-font-size">A+</button>
+				<button id="decrease-font-size">A-</button>
+				<button onclick="resetFontSize()">Reset Font Size</button>
+				<h2>WARNING: Changing the font size may break the websites layout, please reset the font size if this happens.</h2>
+			</div>
+
+			<div class="buttons-container">
+				<h2>Choose your colours: </h2>
+				<button id='red' class='redbutton'>Pastel Red</button>
+				<button id='blue' class='bluebutton'>Faint Blue</button>
+				<button id='green' class='greenbutton'>Summer Green</button>
+				<button id='yellow' class='yellowbutton'>Autumn Yellow</button>
+				<button id='white' class='whitebutton'>White</button>
+			</div>
+
+		    <div class="footerlogo">
+		     	<img src="Images/logo.png">
+		  	</div>
+		        <div class="social"> <!--Social media icons are copied from Font Awesome website-->
+			        <a href="https://www.instagram.com/rick.harith/"><i class="fa-brands fa-instagram"></i></a>
+			        <a href="https://www.youtube.com/channel/UCSQTPFsNZrG0aJGhOF7fdLw"><i class="fa-brands fa-youtube"></i></a>
+			        <a href="https://www.facebook.com/rick.harith/"><i class="fa-brands fa-facebook"></i></a>
+		        </div>
+		        <div class ="footernav">
+		        	<ul class="list"> <!--List of footer content-->
+		        		<li><a href="index.html">Home</a></li>
+		        		<li><a href="AboutUs.html">About Us</a></li>
+		        		<li><a href="ContactUs.html">Contact Us</a></li>  
+			    	</ul>
+		  		</div>
+		  		<p>Name: Rick Richard Harith</p>
+		  		<p>Email: T0321003@my.ntu.ac.uk || Phone Number: 07864676131</p>
+		  		<p>Copyright Information: All images used are not copyright free.</p>
+		</section>
+	</footer>
+	</body>
+	<script src="script.js"></script>
+</html>
